@@ -7,6 +7,7 @@ import { OrdersModule } from "./orders/orders.module";
 import { KitchenModule } from "./kitchen/kitchen.module";
 import { WebsocketModule } from "./websocket/websocket.module";
 import { DatabaseModule } from "./database/database.module";
+import { UploadController } from "./common/controllers/upload.controller";
 
 @Module({
   imports: [
@@ -20,5 +21,7 @@ import { DatabaseModule } from "./database/database.module";
     KitchenModule,
     WebsocketModule,
   ],
+  controllers: [UploadController],
+  providers: [],
 })
 export class AppModule {}
